@@ -405,6 +405,17 @@ body.nav-active { overflow: hidden; }
   max-width: max-content;
   margin-inline: auto;
 }
+.hero-banner img {
+  display: block;
+  width: 440px;
+  height: 440px;
+  max-width: 100%;
+
+  object-fit: contain;
+  object-position: center center;
+
+  border-radius: 50%;
+}
 
 /* ================= EDUCATION TIMELINE ================= */
 
