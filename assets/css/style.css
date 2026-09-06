@@ -382,11 +382,6 @@ body.nav-active { overflow: hidden; }
 }
 
 
-
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -401,43 +396,59 @@ body.nav-active { overflow: hidden; }
   gap: 50px;
 }
 
+/* Profile image container */
 .hero-banner {
   position: relative;
-  max-width: 440px;
-  width: 100%;
+
+  width: 420px;
+  height: 420px;
+
+  max-width: 100%;
   margin-inline: auto;
 
-  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--white);
 
-  overflow: visible;
-  background: transparent;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.10);
 }
 
+/* Actual photo */
 .hero-banner .w-100 {
   width: 100%;
-  height: auto;
-  max-width: 440px;
+  height: 100%;
 
-  object-fit: contain;
-  object-position: center;
+  max-width: none;
 
   display: block;
-  border-radius: 0;
 
-  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.08));
+  /*
+   * The source photo is rectangular,
+   * so cover is correct here.
+   */
+  object-fit: cover;
+
+  /*
+   * Move the image slightly down
+   * so there is comfortable space
+   * above the hair.
+   */
+  object-position: center 35%;
+
+  border-radius: 0;
 }
 
+/* Hero decorative shape */
 .hero .shape {
   position: absolute;
   bottom: 10%;
   right: 2%;
+
   filter: drop-shadow(var(--shadow-2));
 }
 
+/* Hero text */
 .hero-content {
   text-align: center;
 }
@@ -446,6 +457,7 @@ body.nav-active { overflow: hidden; }
   margin-block: 24px 36px;
 }
 
+/* Buttons */
 .btn-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -453,6 +465,8 @@ body.nav-active { overflow: hidden; }
   align-items: center;
   gap: 12px;
 }
+
+
 /* ================= EDUCATION TIMELINE ================= */
 
 .timeline {
