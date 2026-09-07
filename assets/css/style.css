@@ -964,7 +964,7 @@ textarea.input-field {
   .hero { padding-block-start: calc(var(--section-padding) + 80px); }
 
   .hero .container {
-    grid-template-columns: 0.8fr 1fr;
+    grid-template-columns: 420px minmax(0, 1fr);
     align-items: center;
     gap: 100px;
   }
