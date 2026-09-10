@@ -71,6 +71,8 @@
   <li><a href="#experience" class="navbar-link">Experience</a></li>
   <li><a href="#education" class="navbar-link">Education</a></li>
   <li><a href="#projects" class="navbar-link">Projects</a></li>
+  <li><a href="#research" class="navbar-link">Research</a></li>
+  <li><a href="#achievements" class="navbar-link">Achievements</a></li>
   <li><a href="#contact" class="navbar-link">Contact</a></li>
 </ul>
 
@@ -145,9 +147,9 @@
             </p>
 
             <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="#" class="btn btn-primary">See My Works</a>
+              <a href="#projects" class="btn btn-primary">See My Works</a>
 
-              <a href="#" class="btn btn-secondary">Contact Me</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
 
           </div>
@@ -174,6 +176,25 @@
               <p class="section-text">
                 I engineer intelligent embedded systems — from hardware interfacing to low-level firmware and machine learning integration.
 I specialize in building real-time IoT solutions, custom embedded architectures, and performance-optimized systems that operate close to the hardware.
+              </p>
+            </div>
+
+            <!-- Additional technical focus -->
+            <div class="technical-focus" data-reveal="right" style="margin-bottom: 35px;">
+              <h3 class="h3 card-title">Technical Focus</h3>
+              <p class="card-text">
+                <strong>Embedded Software:</strong> C, C++, Embedded C, bare-metal programming, firmware architecture,
+                interrupt-driven systems, memory management, peripheral configuration, debugging and optimization.
+                <br><br>
+                <strong>Microcontrollers & Platforms:</strong> ESP32, STM32, ATmega328P, Arduino, Raspberry Pi Pico and Raspberry Pi.
+                <br><br>
+                <strong>Communication:</strong> UART, SPI, I2C, CAN, Bluetooth, network/socket programming and wireless embedded communication.
+                <br><br>
+                <strong>Real-Time & Systems:</strong> FreeRTOS, task scheduling, interrupt handling, low-level drivers and system validation.
+                <br><br>
+                <strong>Hardware Acceleration:</strong> FPGA/Verilog concepts, digital logic, custom peripherals and hardware-software integration.
+                <br><br>
+                <strong>Machine Learning:</strong> classification, anomaly detection and ML-assisted signal analysis for embedded and communication systems.
               </p>
             </div>
 
@@ -321,7 +342,7 @@ Experienced in bare-metal programming, memory management, interrupt handling, pe
         - #PROJECT
       -->
 
-      <section class="section project" aria-labelledby="project-label">
+      <section class="section project" id="projects" aria-labelledby="project-label">
         <div class="container">
 
           <div class="title-wrapper" data-reveal="top">
@@ -473,6 +494,60 @@ Experienced in bare-metal programming, memory management, interrupt handling, pe
 
           </ul>
 
+          <!-- Additional Projects -->
+          <div class="title-wrapper" data-reveal="top" style="margin-top: 70px;">
+            <div>
+              <h3 class="h2 section-title">Additional Embedded Projects</h3>
+              <p class="section-text">
+                Additional work demonstrating firmware development, embedded audio, hardware integration,
+                real-time systems and low-level programming.
+              </p>
+            </div>
+          </div>
+
+          <ul class="grid-list">
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+                <div class="card-content" data-reveal="left">
+                  <p class="card-tag" style="color: #a07cc5">ESP32 + Bluetooth + Embedded Audio</p>
+                  <h3 class="h3 card-title">Smart AI Desktop Bot</h3>
+                  <p class="card-text">
+                    • Designed and implemented Bluetooth A2DP Sink functionality on ESP32.<br>
+                    • Streamed wireless audio through I2S to a MAX98357A amplifier.<br>
+                    • Integrated INMP114 digital microphone and OLED display for interaction and status.<br>
+                    • Configured OTA partitioning for application and SPIFFS storage.<br>
+                    • Designed, soldered and tested a custom PCB for the embedded audio hardware.
+                  </p>
+                  <a href="https://github.com/harshit2387/robo" class="btn-text" style="color: #a07cc5" target="_blank">
+                    <span class="span">View on GitHub</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project-1.png" width="300" height="300" loading="lazy" alt="Smart AI Desktop Bot" class="w-80">
+                </figure>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+                <div class="card-content" data-reveal="right">
+                  <p class="card-tag" style="color: #3f78e0">Embedded Networking + Firmware</p>
+                  <h3 class="h3 card-title">Embedded Networking & Firmware</h3>
+                  <p class="card-text">
+                    • Worked with ESP32-based embedded networking and communication concepts.<br>
+                    • Developed firmware-oriented components with emphasis on low-level control.<br>
+                    • Explored UART, SPI, I2C and wireless communication interfaces.<br>
+                    • Applied debugging, testing and performance-analysis techniques across embedded prototypes.
+                  </p>
+                </div>
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/project-2.png" width="600" height="369" loading="lazy" alt="Embedded Networking and Firmware" class="w-100">
+                </figure>
+              </div>
+            </li>
+          </ul>
+
         </div>
       </section>
 
@@ -501,6 +576,14 @@ Experienced in bare-metal programming, memory management, interrupt handling, pe
         Internship – Embedded Systems/ Machine Learning & Research
         <br>
         Optical Communication & Biophotonics Lab
+        <br><br>
+        <strong>Project:</strong> Experimental Analysis of Machine Learning-Driven Adaptive Threshold
+        Decoding in UWOC Systems for Various Turbidity.
+        <br><br>
+        <strong>Technical Work:</strong> Underwater optical communication testbed development,
+        laser/photodetector signal acquisition, external ADC integration, dataset generation,
+        ML-based classification, adaptive threshold analysis, BER evaluation and communication
+        performance analysis.
       </p>
       <figure class="card-banner center-img" data-reveal="right">
         <img src="./assets/images/diat-drdo.jpg"
@@ -655,10 +738,76 @@ Experienced in bare-metal programming, memory management, interrupt handling, pe
   </div>
 </section>
 
+<!--
+  - #RESEARCH & PUBLICATIONS
+-->
+<section class="section research" id="research" aria-label="research and publications">
+  <div class="container">
+    <div class="title-wrapper" data-reveal="top">
+      <div>
+        <h2 class="h2 section-title">Research & Publications</h2>
+        <p class="section-text">
+          Research work focused on machine-learning-assisted underwater optical communication,
+          adaptive signal detection, forward error correction, and communication-system performance analysis.
+        </p>
+      </div>
+    </div>
 
-<!-- 
+    <div class="about-card" data-reveal="bottom">
+      <h3 class="h3 card-title">
+        Machine Learning–Enhanced UWOC System for Robust Underwater Communication with FEC Integration
+      </h3>
+      <p class="card-text">
+        <strong>Journal:</strong> Journal of Optics and Photonics Research<br><br>
+        <strong>Research Area:</strong> Underwater Wireless Optical Communication, Machine Learning,
+        Forward Error Correction, Signal Processing and Adaptive Threshold Detection.<br><br>
+        <strong>Work:</strong> Developed and experimentally evaluated an ML + FEC-based UWOC system
+        under varying turbidity conditions. The work involved an underwater optical testbed,
+        real-time signal acquisition, dataset generation, adaptive threshold analysis and BER evaluation.
+        <br><br>
+        <strong>Experimental Contributions:</strong> Generated a 50K+ NTU-labeled dataset for signal
+        classification, investigated AoA and SNR variations across water conditions, and evaluated
+        ML-assisted detection for improving communication reliability.
+        <br><br>
+        <strong>Published:</strong> April 2026
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--
   - #EDUCATION
 -->
+
+<!--
+  - #ACHIEVEMENTS
+-->
+<section class="section achievements" id="achievements" aria-label="achievements">
+  <div class="container">
+    <h2 class="h2 section-title" style="text-align:center; margin-bottom:40px;">
+      Achievements
+    </h2>
+
+    <div class="grid-list">
+      <div class="about-card" data-reveal="left">
+        <h3 class="h3 card-title">SAP Hackfest 2025</h3>
+        <p class="card-text">
+          Winner — Regional Level. Built an IoT-based sustainable business monitoring system,
+          applying connected-device concepts to a practical business and sustainability problem.
+        </p>
+      </div>
+
+      <div class="about-card" data-reveal="right">
+        <h3 class="h3 card-title">Research Publication</h3>
+        <p class="card-text">
+          Published research on machine-learning-enhanced underwater optical communication
+          with forward error correction, focusing on robust communication under changing
+          underwater conditions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ================= EDUCATION TIMELINE ================= -->
 
@@ -678,7 +827,8 @@ Experienced in bare-metal programming, memory management, interrupt handling, pe
           <h3>Bachelor of Technology (B.Tech)</h3>
           <h4>Computer Science & Engineering</h4>
           <p>Lovely Professional University (LPU)</p>
-          <span>2023 – Present</span>
+          <p>CGPA: 7.39</p>
+          <span>2023 – Present | Expected Graduation: June 2027</span>
         </div>
       </div>
 
@@ -688,6 +838,7 @@ Experienced in bare-metal programming, memory management, interrupt handling, pe
         <div class="timeline-content">
           <h3>Senior Secondary (12th) – Science (PCM)</h3>
           <p>Kendriya Vidyalaya Dwarka Sec – 5 (CBSE)</p>
+          <p>Percentage: 83% | Science (PCM)</p>
           <span>2022 – 2023</span>
         </div>
       </div>
@@ -698,6 +849,7 @@ Experienced in bare-metal programming, memory management, interrupt handling, pe
         <div class="timeline-content">
           <h3>Secondary (10th)</h3>
           <p>Kendriya Vidyalaya Dwarka Sec – 5 (CBSE)</p>
+          <p>Percentage: 85%</p>
           <span>2020 – 2021</span>
         </div>
       </div>
